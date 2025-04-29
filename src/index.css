@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .bannerIcon{
+        @apply w-14 h-14 bg-orange-500 bg-opacity-25 text-gray-200 text-2xl inline-flex shadow-md shadow-black
+        items-center justify-center rounded-md hover:bg-opacity-40 hover:translate-y-1 transition-all
+        hover:text-white cursor-pointer duration-300 
+    }
+    .bg-fancy-gradient {
+        background: linear-gradient(135deg, #1b3a0c, #2e7d32, #1e3a8a, #0c0f2c);
+      }
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
